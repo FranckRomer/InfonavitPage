@@ -1,0 +1,28 @@
+---
+// import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import DataBaseTable from '../components/DataBaseTable.astro';
+---
+
+<Layout>
+	<!-- <Header /> -->
+	<DataBaseTable />
+	
+	<!-- <Welcome /> -->
+</Layout>
+
+<style>	
+	body {
+		/* gradiente izquierda derecha a 180 grados */
+		background: linear-gradient(to right, #eee, #fff);
+
+		/* background: -webkit-linear-gradient(145deg, #ccf9ff,#00fbff,#9eb0ff);Chrome 10-25, Safari 5.1-6                          background: linear-gradient(145deg, #ccf9ff,#00fbff,#9eb0ff);W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+                                              */
+		/* background: linear-gradient(to right, #000, #fff); */
+		/* background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%); */
+		
+	}
+	
+</style>
+
+<script>

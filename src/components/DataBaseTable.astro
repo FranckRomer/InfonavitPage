@@ -1,0 +1,121 @@
+---
+const data = [
+	{ id: 1, name: 'John Doe', email: 'john.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+	{ id: 2, name: 'Jane Doe', email: 'jane.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+	{ id: 3, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 4, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 5, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 6, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 7, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 8, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 9, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 10, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 11, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 12, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 13, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 14, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 15, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 16, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 17, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 18, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 19, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 20, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 21, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 22, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 23, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 24, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 25, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 26, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 27, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 28, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 29, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+    { id: 30, name: 'Jim Doe', email: 'jim.doe@example.com', age: 25, nss: "234156", curp: "1234567890", status: "Activo" },
+];
+---
+
+<div class="table-container">
+    <div class="title-container">
+        <h1>Infonavit</h1>
+        <h2>Evolve Interactive</h2>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+                <th>NSS</th>
+                <th>CURP</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {data.map((item) => (
+                <tr>
+                    <td>{item.id}</td>
+                    <td>{item.name}</td>
+                    <td>{item.email}</td>
+                    <td>{item.age}</td>
+                    <td>{item.nss}</td>
+                    <td>{item.curp}</td>
+                    <td>{item.status}</td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</div>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 50px;
+        overflow: hidden;
+        margin: auto;
+        padding: 20px;
+        background-color: #ffffff20;
+    }
+    div {
+        margin: auto;
+        padding: 20px;
+    }
+    table, th, td {
+        border: 1px solid #000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    th {
+        padding: 10px;
+        text-align: left;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: #ffffff50;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    td {
+        padding: 10px;
+        text-align: left;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .table-container {
+        width: 80%;
+        height: 70vh;
+        margin: auto;
+        background-color: #ffffff50;
+        border-radius: 10px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin-top: 20vh;
+        overflow: auto;
+    }
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-bottom: 20px;
+    }
+</style>
