@@ -6,8 +6,14 @@ import DataBaseTable from '../components/DataBaseTable.astro';
 ---
 
 <Layout>
-	<!-- <Header /> -->
-	<DataBaseTable />
+	<Header page="home" />
+	<a href="/DataNss" class="tarjeta">
+		<h1>Data Nss</h1>
+	</a>
+	<a href="/getNss" class="tarjeta">
+		<h1>Get Nss</h1>
+	</a>
+	<!-- <DataBaseTable /> -->
 	
 	<!-- <Welcome /> -->
 </Layout>
@@ -21,6 +27,20 @@ import DataBaseTable from '../components/DataBaseTable.astro';
 		/* background: linear-gradient(to right, #000, #fff); */
 		/* background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%); */
 		
+	}
+	.tarjeta {
+		background: linear-gradient(to right, #eee, #fff);
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		text-decoration: none;
+		color: #000;
+		display: block;
+		margin: 20px;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		line-height: 200px;
 	}
 	
 </style>
